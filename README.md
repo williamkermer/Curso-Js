@@ -1,2 +1,2 @@
 # Curso-Js
- Studying JS online.
+ Studying JS online on Udemy.
