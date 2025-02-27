@@ -20,9 +20,14 @@ function meuEscopo(){
         const peso = form.querySelector('.peso')
         const altura = form.querySelector('.altura')
        
-        pessoas.push([nome.value, sobrenome.value, peso.value, altura.value]);
+        pessoas.push({
+            nome: nome.value, 
+            sobrenome: sobrenome.value, 
+            peso: peso.value, 
+            altura: altura.value
+        });
 
-        document.body.innerHTML += `<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.value}</p>`;
+        resultado.innerHTML += `<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.value}<p/>`;
         
     }
 
