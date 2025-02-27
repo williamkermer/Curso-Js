@@ -2,7 +2,7 @@
 Operadores Lógicos
 &&  - And = todas as expressões precisam ser verdadeiras para retornar true
 ||  - Ou = Apenas uma precisa ser verdadeira para retornar true
-!   - Not = 
+!   - Not = Nega/Inverte o resultado da expressão boleana
 */
 
 const expressão1 = false && true && false && false;
