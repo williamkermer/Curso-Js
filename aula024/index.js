@@ -14,6 +14,6 @@ if (hora < 12){
 
 }else{
 
-    console.log('Oi')
+    console.log('Oi');
 
 }
