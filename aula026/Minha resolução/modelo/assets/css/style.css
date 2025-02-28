@@ -100,3 +100,23 @@ form button:hover{
     background-color: var(--primary-color-darker);
 
 }
+
+div.resultado{
+
+    width: 100%;
+
+}
+
+.result{
+
+    background-color: rgb(17, 231, 185);
+    padding: 0 10px;
+
+}
+
+.resultNeg{
+
+    background-color: rgb(231, 17, 17);
+    padding: 0 10px;
+
+}
