@@ -72,3 +72,38 @@ form button:hover{
     background-color: var(--primary-color-darker);
 
 }
+
+.calculadora{
+
+    width: 100%;
+
+}
+
+.display{
+
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+
+}
+
+.btn{
+
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+
+.btn:hover{
+
+    background-color: #9e9e9e;
+
+}
+
+.btn-eq{
+
+    background-color: rgb(123, 123, 241);
+
+}
