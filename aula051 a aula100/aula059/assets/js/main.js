@@ -1,59 +1,60 @@
-function criaCalculadora(){
-    return {
-        display: document.querySelector('.display'),
-        btnClear:document.querySelector('.btn-clear'),
+function Calculadora(){
+    
+        this.display = document.querySelector('.display');
+        this.btnClear = document.querySelector('.btn-clear');
 
-        inicia(){
+        this.inicia = () => {
 
             this.clickBotoes();
             this.pressionaEnter();
-        },
-
-        pressionaEnter() {
+        };
+        //
+        this.pressionaEnter = () =>{
             this.display.addEventListener('keydown', e => {
                 if (e.key === 'Enter') {
                     e.preventDefault(); 
                     this.realizaConta();
                 }
             });
-        },
-
-        realizaConta(){
+        };
+        //
+        this.realizaConta = () => {
 
             let conta = this.display.value;
 
             try{
 
                 conta = eval(conta);
+                
 
-                if(!conta){
+                 if(!conta){
 
-                    alert('Conta Inválida');
-                    return;
+                     alert('Conta Inválida');
+                     return;
 
-                }
-                this.display.value = String(conta);
+                 }
+                 this.display.value = String(conta);
 
-            }catch(e){
-                alert('Conta Inválida');
-                return;
-            }
+             }catch(e){
+                 alert('Conta Inválida');
+                 return;
+             }
 
 
-        },
-
-        clearDisplay(){
+        };
+        //
+        this.clearDisplay = () => {
             this.display.value = '';
 
-        },
-
-        apagaUm(){
+        };
+        //
+        this.apagaUm = () => {
 
             this.display.value = this.display.value.slice(0,-1)
 
-        },
-
-        clickBotoes(){
+        };
+        //
+        this.clickBotoes = () => {
 
             document.addEventListener('click', function(e){
 
@@ -82,17 +83,15 @@ function criaCalculadora(){
                 
             }.bind(this))
 
-        },
-
-        btnParaDisplay(innerText){
+        };
+        //
+        this.btnParaDisplay = (innerText) => {
 
             this.display.value += innerText
             this.display.focus();
-        }
+            
+        };
 
     }
-}
-
-const calculadora = criaCalculadora();
-
+const calculadora = new Calculadora();
 calculadora.inicia();
