@@ -12,7 +12,7 @@ function Produto(nome, preco, estoque){
         configurable: true //pode reconfigurar? (usar define Property depois) ou apagar a variavel
 
     });
-    Object.defineProperty(this,{ //varias variaveis
+    Object.defineProperties(this,{ //varias variaveis
 
         nome:{
             enumerable: true, //visivel?
