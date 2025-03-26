@@ -21,30 +21,31 @@
                 <li>Senha precisa ter entre 6 e 12 caracteres</li>
             </ul>
         </p>
-        <form action="/" method="post" class="formulario">
+        <form action="/" method="post" class="form">
             <label for="input-teste-1">Nome:</label>
-            <input type="text" class="nome" required>
+            <input type="text" class="nome validar" >
 
             <label for="input-teste-2">Sobrenome:</label>
-            <input type="text" class="sobrenome" required>
+            <input type="text" class="sobrenome validar" >
 
             <label for="input-teste-3">CPF:</label>
-            <input type="text" class="cpf" required>
+            <input type="text" class="cpf validar" >
 
             <label for="input-teste-4">Usuário:</label>
-            <input type="text" class="usuario" required minlength="3" maxlength="12">
+            <input type="text" class="usuario validar">
 
             <label for="input-teste-4">Senha:</label>
-            <input type="password" class="senha" required minlength="6" maxlength="12">
+            <input type="password" class="senha validar">
 
             <label for="input-teste-4">Repetir Senha:</label>
-            <input type="password" class="repetir-senha" required minlength="6" maxlength="12">
+            <input type="password" class="repetir-senha validar">
 
             <button>Enviar</button>
         </form>
 
     </section>
 
+    <script src="./assets/js/validaCPF.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
